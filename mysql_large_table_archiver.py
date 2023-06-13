@@ -2,7 +2,7 @@
 #V1 : 13th, June, 2023
 # This code basically archives defined set of rows from a large table into an archive table
 # This snippet was last tested on a 700gb (5bn records) table on Aurora MySQL v3
-# In 100k chunks, 50m records were copied out in 1hr
+# In 100k chunks, 50m records were copied out in about 1hr 20min
 
 import os
 import time
@@ -89,6 +89,17 @@ print("started : " + str(ts) + " ended : " + str(endtime))
 
 print("total selected :")
 print("total inserted")
+
+
+# Sample output
+# Run Cycle 498 Completed at : 2023-06-13 16:17:39.420063
+# date input for batch insert:2023-01-19 11:46:57
+# next date to process :2023-01-19 11:56:08
+# Run Cycle 499 Completed at : 2023-06-13 16:17:50.092378
+# date input for batch insert:2023-01-19 11:56:08
+# next date to process :2023-01-19 12:05:37
+# Run Cycle 500 Completed at : 2023-06-13 16:18:01.747618
+# started : 2022-06-13 15:02:29 ended : 2023-06-13 16:18:02.751395
 
 
 
