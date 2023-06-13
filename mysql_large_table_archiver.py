@@ -2,7 +2,7 @@
 #V1 : 13th, June, 2023
 # This code basically archives defined set of rows from a large table into an archive table
 # This snippet was last tested on a 700gb (5bn records) table on Aurora MySQL v3
-# In 100k chunks, 50m records were copied out in about 1hr 20min
+# In 100k chunks, 50m records were copied out in about 1hr 20min, see sample output at the end
 
 import os
 import time
